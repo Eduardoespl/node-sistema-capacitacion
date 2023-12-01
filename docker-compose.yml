@@ -1,0 +1,36 @@
+version: "3"
+services:
+  web-service:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:80
+    secrets:
+      - db_password
+    command: ["npm", "run", "debug"]
+  mysql:
+    image: mysql:8.0.35
+    volumes:
+      - mysql_data:/var/lib/mysql
+    expose:
+      - 3306
+    ports:
+      - 33020:3306
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+      MYSQL_DATABASE: capacitacion
+      MYSQL_USER: user_recursos
+      MYSQL_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_root_password
+      - db_password
+volumes:
+  mysql_data:
+
+secrets:
+  db_root_password:
+    file: ./secrets/db_root_password.txt
+  db_password:
+    file: ./.secrets/db_password.txt
