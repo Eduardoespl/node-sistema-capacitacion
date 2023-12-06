@@ -5,5 +5,17 @@
     "knex": "^3.0.1",
     "mysql2": "^3.6.5",
     "nodemon": "^3.0.2"
-  }
+  },
+  "name": "sistema-capacitacion",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
