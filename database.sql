@@ -41,12 +41,3 @@ CREATE TABLE vacantes (
     FOREIGN KEY (fk_id_puesto) REFERENCES puestos(id_puesto),
     FOREIGN KEY (fk_id_curso) REFERENCES cursos(id_curso)
 )
-
-CREATE TABLE trabajadores_cursos (
-    id_trabajador_curso INTEGER NOT NULL AUTO_INCREMENT,
-    fk_id_trabajador INTEGER NOT NULL,
-    fk_id_curso INTEGER NOT NULL,
-    PRIMARY KEY (id_trabajador_curso),
-    FOREIGN KEY (fk_id_trabajador) REFERENCES trabajadores(id_trabajador),
-    FOREIGN KEY (fk_id_curso) REFERENCES cursos(id_curso)
-)
