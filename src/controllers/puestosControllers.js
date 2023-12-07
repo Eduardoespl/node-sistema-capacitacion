@@ -1,4 +1,4 @@
-const PuestosModel = require("../models/PuestosModel");
+const PuestosModel = require("../models/PuestosModels");
 
 class PuestosController
 {

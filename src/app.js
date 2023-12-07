@@ -3,24 +3,24 @@ const express = require('express');
 const app = express();
 const puerto = 80;
 
-const TrabajadoresController = require('./controllers/trabajadoresController');
+const TrabajadoresController = require('./controllers/trabajadoresControllers');
 app.use(express.json());
 app.get('/trabajador', TrabajadoresController.indexGet);
 app.get('/trabajador/:id([0-9]+)', TrabajadoresController.getTrabajadorById);
 
-const CursosController = require('./controllers/cursosController');
+const CursosController = require('./controllers/cursosControllers');
 app.use(express.json());
 app.get('/cursos', CursosController.indexGet);
 
-const CategoriasController = require('./controllers/categoriasController');
+const CategoriasController = require('./controllers/categoriasControllers');
 app.use(express.json());
 app.get('/categorias', CategoriasController.indexGet);
 
-const PuestosController = require('./controllers/puestosController');
+const PuestosController = require('./controllers/puestosControllers');
 app.use(express.json());
 app.get('/puestos', PuestosController.indexGet);
 
-const VacantesController = require('./controllers/vacantesController');
+const VacantesController = require('./controllers/vacantesControllers');
 app.use(express.json());
 app.get('/vacantes', VacantesController.indexGet);
 
