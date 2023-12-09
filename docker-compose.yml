@@ -31,6 +31,6 @@ volumes:
 
 secrets:
   db_root_password:
-    file: ./secrets/db_root_password.txt
+    file: ./.secrets/db_root_password.txt
   db_password:
     file: ./.secrets/db_password.txt
