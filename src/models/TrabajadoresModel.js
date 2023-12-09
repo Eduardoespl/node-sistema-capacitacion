@@ -18,8 +18,21 @@ class TrabajadoresModel {
     static async insertar(trabajador)
     {
         let db = await connectToMysql();
-        let query = db("trabajadores").insert(trabajador);
-        return await query;
+        const result = await db('trabajadores').insert(trabajador).returning('id_trabajador');
+        return result[0];
+    }
+
+    static async actualizar(id, campos) {
+        let db = await connectToMysql();
+        return await db('trabajadores').where('id_trabajador', id).update(campos);
+    }
+
+    static async reemplazar(id, newData) {
+        let db = await connectToMysql();
+        newData['id_trabajador'] = id;
+        await db('trabajadores').where('id_trabajador', id).del();
+        await db.insert(newData).into('trabajadores');
+        return id;
     }
 }
 

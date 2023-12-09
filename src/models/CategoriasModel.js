@@ -18,8 +18,21 @@ class CategoriasModel {
     static async insertar(categorias)
     {
         let db = await connectToMysql();
-        let query = db("categorias").insert(categorias);
-        return await query;
+        const result = await db('categorias').insert(categorias).returning('id_categoria');
+        return result[0];
+    }
+
+    static async actualizar(id, campos) {
+        let db = await connectToMysql();
+        return await db('categorias').where('id_categoria', id).update(campos);
+    }
+
+    static async reemplazar(id, newData) {
+        let db = await connectToMysql();
+        newData['id_categoria'] = id;
+        await db('categorias').where('id_categoria', id).del();
+        await db.insert(newData).into('categorias');
+        return id;
     }
 }
 
