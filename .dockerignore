@@ -1,0 +1,2 @@
+# Excluye las dependencias de node_modules
+node_modules
