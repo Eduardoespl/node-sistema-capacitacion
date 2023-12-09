@@ -15,7 +15,6 @@ PATCH /cursos/3
 ## Valor de entrada de Solicitud
 ```json
     {
-        "id_curso": 3,
         "fk_id_categoria": 3,
         "nombre": "Trabajo en Equipo",
         "aptitud": "Habilidades para el manejo de equipos de trabajo"
