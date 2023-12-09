@@ -15,7 +15,6 @@ PATCH /categorias/1
 ## Valor de entrada de Solicitud
 ```json
     {
-        "id_categoria": 2,
         "nombre": "Humanidades"
     }
 ```
