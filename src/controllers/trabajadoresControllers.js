@@ -1,4 +1,4 @@
-const TrabajadoresModel = require("../models/TrabajadoresModel");
+const TrabajadoresModel = require("../models/trabajadoresModel");
 
 class TrabajadoresController
 {
@@ -24,7 +24,7 @@ class TrabajadoresController
         let data = {
             'nombre': req.body.nombre,
         }
-        await MenusModel.insertar(data);
+        await TrabajadoresModel.insertar(data);
     }
 }
 

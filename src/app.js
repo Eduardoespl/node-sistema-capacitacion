@@ -27,7 +27,7 @@ app.get('/vacantes', VacantesController.indexGet);
 app.get('/', function(req, res){
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hola Mundo!');
+    res.end('Hola Mundo capacitacion!');
 });
 
 app.listen(puerto, function() {

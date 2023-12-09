@@ -3,7 +3,7 @@
 FROM node:lts-slim
 
 # Crea y cambiamo sel directorio /app
-WORKDIR /app/
+WORKDIR /app
 
 # Copia el contenido del proyecto a /app
 COPY ./package*.json /app/
