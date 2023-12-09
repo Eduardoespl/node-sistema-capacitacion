@@ -21,8 +21,8 @@ de endpoints disponibles con enlaces a sus respectivas documentaciones detallada
 | [`PATCH /puestos/{id}`](./endpoints/puestos/patch-puestos.md) | Realiza una actualización parcial de un puesto específico. |
 | [`GET /trabajador`](./endpoints/trabajador/get-trabajador-all.md)             | Recupera la lista de todos los trabajadores disponibles. |
 | [`GET /trabajador/{id}`](./endpoints/trabajador/get-trabajador-id.md)        | Obtiene información detallada sobre un trabajador específico. |
-| [`POST /trabajadores`](./endpoints/trabajador/post-trabajadores.md)         | Crea un nuevo registro de trabajador.         |
-| [`PATCH /trabajadores/{id}`](./endpoints/trabajador/patch-trabajadores.md) | Realiza una actualización parcial de un trabajador específico. |
+| [`POST /trabajador`](./endpoints/trabajador/post-trabajador.md)         | Crea un nuevo registro de trabajador.         |
+| [`PATCH /trabajador/{id}`](./endpoints/trabajador/patch-trabajador.md) | Realiza una actualización parcial de un trabajador específico. |
 | [`GET /vacantes`](./endpoints/vacantes/get-vacantes-all.md)             | Recupera la lista de todos las vacantes disponibles. |
 | [`GET /vacantes/{id}`](./endpoints/vacantes/get-vacantes-id.md)        | Obtiene información detallada sobre una vacante especifica. |
 | [`POST /vacantes`](./endpoints/vacantes/post-vacantes.md)         | Crea un nuevo registro de vacante.      |

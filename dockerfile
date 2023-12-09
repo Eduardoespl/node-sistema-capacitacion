@@ -11,6 +11,7 @@ COPY ./package*.json /app/
 # Instala las dependencias de node
 RUN npm install
 
+# Copiamos el contenido del proyecto a /app
 COPY . /app/
 
 # Exponer el puerto 80
