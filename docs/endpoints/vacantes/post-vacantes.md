@@ -16,7 +16,7 @@ POST /vacantes
     {
         "fk_id_puesto": 1,
         "fk_id_curso": 3
-    },
+    }
 ```
 
 ## Respuesta Exitosa (Código 201 OK)

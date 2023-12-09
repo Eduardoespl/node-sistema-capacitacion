@@ -16,7 +16,7 @@ POST /puestos
     {
         "nombre": "Gerente",
         "descripcion": "Responsable de la administración de la empresa"
-    },
+    }
 ```
 
 ## Respuesta Exitosa (Código 201 OK)

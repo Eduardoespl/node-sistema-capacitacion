@@ -15,7 +15,6 @@ PATCH /puestos/2
 ## Valor de entrada de Solicitud
 ```json
     {
-        "id_puesto": 2,
         "nombre": "Recursos Humanos",
         "descripcion": "Encargado de la administración de personal"
     }

@@ -15,7 +15,6 @@ PATCH /vacantes/1
 ## Valor de entrada de Solicitud
 ```json
     {
-        "id_vacante": 1,
         "fk_id_puesto": 3,
         "fk_id_curso": 2
     }
